@@ -1,10 +1,10 @@
-﻿<xapCache source="C:\Users\rszypulewski\Desktop\GitHub\Paint\Paint\Bin\Debug\Paint.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="2014-03-19 15:05:26">
-  <file source="C:\Users\rszypulewski\Desktop\GitHub\Paint\Paint\Bin\Debug\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="2014-03-14 11:01:05" />
-  <file source="C:\Users\rszypulewski\Desktop\GitHub\Paint\Paint\Background.png" archivePath="Background.png" lastWriteTime="2014-03-14 09:44:28" />
-  <file source="C:\Users\rszypulewski\Desktop\GitHub\Paint\Paint\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="2014-03-14 09:44:28" />
-  <file source="C:\Users\rszypulewski\Desktop\GitHub\Paint\Paint\obj\Debug\Paint.dll" archivePath="Paint.dll" lastWriteTime="2014-03-19 15:05:25" />
-  <file source="C:\Users\rszypulewski\Desktop\GitHub\Paint\Paint\SplashScreenImage.jpg" archivePath="SplashScreenImage.jpg" lastWriteTime="2014-03-14 09:44:28" />
-  <file source="C:\Users\rszypulewski\Desktop\GitHub\Paint\Paint\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="2014-03-14 11:01:05" />
-  <file source="C:\Users\rszypulewski\Desktop\GitHub\Paint\Paint\Bin\Debug\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="2014-03-14 09:44:28" />
-  <file source="C:\Users\rszypulewski\Desktop\GitHub\Paint\Paint\Bin\Debug\Background.png" archivePath="Background.png" lastWriteTime="2014-03-14 09:44:28" />
+﻿<xapCache source="C:\Users\rszypulewski\Desktop\GitHub\WP-Paint.git\Paint\Paint\Bin\Debug\Paint.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="2014-03-25 13:12:05">
+  <file source="C:\Users\rszypulewski\Desktop\GitHub\WP-Paint.git\Paint\Paint\Bin\Debug\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="2014-03-14 11:01:05" />
+  <file source="C:\Users\rszypulewski\Desktop\GitHub\WP-Paint.git\Paint\Paint\Background.png" archivePath="Background.png" lastWriteTime="2014-03-14 09:44:28" />
+  <file source="C:\Users\rszypulewski\Desktop\GitHub\WP-Paint.git\Paint\Paint\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="2014-03-14 09:44:28" />
+  <file source="C:\Users\rszypulewski\Desktop\GitHub\WP-Paint.git\Paint\Paint\obj\Debug\Paint.dll" archivePath="Paint.dll" lastWriteTime="2014-03-25 13:12:05" />
+  <file source="C:\Users\rszypulewski\Desktop\GitHub\WP-Paint.git\Paint\Paint\SplashScreenImage.jpg" archivePath="SplashScreenImage.jpg" lastWriteTime="2014-03-14 09:44:28" />
+  <file source="C:\Users\rszypulewski\Desktop\GitHub\WP-Paint.git\Paint\Paint\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="2014-03-14 11:01:05" />
+  <file source="C:\Users\rszypulewski\Desktop\GitHub\WP-Paint.git\Paint\Paint\Bin\Debug\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="2014-03-14 09:44:28" />
+  <file source="C:\Users\rszypulewski\Desktop\GitHub\WP-Paint.git\Paint\Paint\Bin\Debug\Background.png" archivePath="Background.png" lastWriteTime="2014-03-14 09:44:28" />
 </xapCache>

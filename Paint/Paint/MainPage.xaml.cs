@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
+using System.Text;
 
 namespace Paint
 {
@@ -48,15 +49,28 @@ namespace Paint
                 MainCanvas.Children.Remove(drawEli);
                 MainCanvas.Children.Add(drawEli);
             }
-            if (Convert.ToBoolean(RadioRec.IsChecked))
+            if (Convert.ToBoolean(RadioPen.IsChecked))
             {
+                drawLine = new Line();
+                currentPoint = e.GetPosition(MainCanvas);
+                drawLine.X1 = startPoint.X;
+                drawLine.Y1 = startPoint.Y;
+                drawLine.X2 = currentPoint.X;
+                drawLine.Y2 = currentPoint.Y;
+                drawLine.StrokeDashCap = PenLineCap.Round;
+                drawLine.StrokeEndLineCap = PenLineCap.Round;
+                drawLine.Stroke = new SolidColorBrush(Color.FromArgb(255, Convert.ToByte(Convert.ToInt32(SliderRed.Value)), Convert.ToByte(Convert.ToInt32(SliderGreen.Value)), Convert.ToByte(Convert.ToInt32(SliderBlue.Value))));
+                drawLine.StrokeThickness = SliderThickness.Value;
+                drawLine.Opacity = 1;
 
+                MainCanvas.Children.Add(drawLine);
             }
         }
 
         private void MainCanvas_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             Draw = true;
+            startPoint = e.GetPosition(MainCanvas);
             if (Convert.ToBoolean(RadioLine.IsChecked))
             {
                 drawLine = new Line();
@@ -65,11 +79,22 @@ namespace Paint
             {
                 drawEli = new Ellipse();
             }
-            if (Convert.ToBoolean(RadioRec.IsChecked))
+            if (Convert.ToBoolean(RadioPen.IsChecked))
             {
-                drawRec = new Rectangle();
+                drawLine = new Line();
+                drawLine.X1 = startPoint.X;
+                drawLine.Y1 = startPoint.Y;
+                drawLine.X2 = startPoint.X;
+                drawLine.Y2 = startPoint.Y;
+                drawLine.StrokeDashCap = PenLineCap.Round;
+                drawLine.StrokeEndLineCap = PenLineCap.Round;
+                drawLine.Stroke = new SolidColorBrush(Color.FromArgb(255, Convert.ToByte(Convert.ToInt32(SliderRed.Value)), Convert.ToByte(Convert.ToInt32(SliderGreen.Value)), Convert.ToByte(Convert.ToInt32(SliderBlue.Value))));
+                drawLine.StrokeThickness = SliderThickness.Value;
+                drawLine.Opacity = 1;
+
+                MainCanvas.Children.Add(drawLine);
             }
-            startPoint = e.GetPosition(MainCanvas);
+
         }
 
         private void MainCanvas_MouseMove(object sender, MouseEventArgs e)
@@ -119,35 +144,30 @@ namespace Paint
 
                     MainCanvas.Children.Add(drawEli);
                 }
-                if (Convert.ToBoolean(RadioRec.IsChecked))
+                if (Convert.ToBoolean(RadioPen.IsChecked))
                 {
-                    MainCanvas.Children.Remove(drawRec);
-                    drawRec.Height = Math.Abs(startPoint.Y - currentPoint.Y);
-                    drawRec.Width = Math.Abs(startPoint.X - currentPoint.X);
-                    drawRec.StrokeThickness = SliderThickness.Value;
-                    drawRec.Stroke = new SolidColorBrush(Color.FromArgb(255, Convert.ToByte(Convert.ToInt32(SliderRed.Value)), Convert.ToByte(Convert.ToInt32(SliderGreen.Value)), Convert.ToByte(Convert.ToInt32(SliderBlue.Value))));
-                    if (startPoint.Y >= currentPoint.Y)
-                    {
-                        Canvas.SetTop(drawRec, currentPoint.Y);
-                    }
-                    else
-                    {
-                        Canvas.SetTop(drawRec, startPoint.Y);
-                    }
-                    if (startPoint.X >= currentPoint.X)
-                    {
-                        Canvas.SetLeft(drawRec, currentPoint.X);
-                    }
-                    else
-                    {
-                        Canvas.SetLeft(drawRec, startPoint.X);
-                    }
+                    drawLine = new Line();
 
+                    drawLine.X1 = startPoint.X;
+                    drawLine.Y1 = startPoint.Y;
+                    drawLine.X2 = currentPoint.X;
+                    drawLine.Y2 = currentPoint.Y;
+                    drawLine.StrokeDashCap = PenLineCap.Round;
+                    drawLine.StrokeEndLineCap = PenLineCap.Round;
+                    drawLine.Stroke = new SolidColorBrush(Color.FromArgb(255, Convert.ToByte(Convert.ToInt32(SliderRed.Value)), Convert.ToByte(Convert.ToInt32(SliderGreen.Value)), Convert.ToByte(Convert.ToInt32(SliderBlue.Value))));
+                    drawLine.StrokeThickness = SliderThickness.Value;
+                    drawLine.Opacity = 1;
 
-                    MainCanvas.Children.Add(drawRec);
+                    MainCanvas.Children.Add(drawLine);
+                    startPoint = currentPoint;
                 }
 
             }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MainCanvas.Children.Clear();
         }
     }
 }

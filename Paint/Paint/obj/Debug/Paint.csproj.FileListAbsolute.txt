@@ -24,3 +24,16 @@ C:\Users\rszypulewski\Desktop\GitHub\Paint\Paint\obj\Debug\Paint.g.resources
 C:\Users\rszypulewski\Desktop\GitHub\Paint\Paint\obj\Debug\Paint.dll
 C:\Users\rszypulewski\Desktop\GitHub\Paint\Paint\obj\Debug\Paint.pdb
 C:\Users\rszypulewski\Desktop\GitHub\Paint\Paint\obj\Debug\XapCacheFile.xml
+C:\Users\rszypulewski\Desktop\GitHub\WP-Paint.git\Paint\Paint\Bin\Debug\ApplicationIcon.png
+C:\Users\rszypulewski\Desktop\GitHub\WP-Paint.git\Paint\Paint\Bin\Debug\Background.png
+C:\Users\rszypulewski\Desktop\GitHub\WP-Paint.git\Paint\Paint\Bin\Debug\Paint.dll
+C:\Users\rszypulewski\Desktop\GitHub\WP-Paint.git\Paint\Paint\Bin\Debug\Paint.pdb
+C:\Users\rszypulewski\Desktop\GitHub\WP-Paint.git\Paint\Paint\Bin\Debug\AppManifest.xaml
+C:\Users\rszypulewski\Desktop\GitHub\WP-Paint.git\Paint\Paint\Bin\Debug\Paint.xap
+C:\Users\rszypulewski\Desktop\GitHub\WP-Paint.git\Paint\Paint\obj\Debug\Paint.csprojResolveAssemblyReference.cache
+C:\Users\rszypulewski\Desktop\GitHub\WP-Paint.git\Paint\Paint\obj\Debug\App.g.cs
+C:\Users\rszypulewski\Desktop\GitHub\WP-Paint.git\Paint\Paint\obj\Debug\MainPage.g.cs
+C:\Users\rszypulewski\Desktop\GitHub\WP-Paint.git\Paint\Paint\obj\Debug\Paint.g.resources
+C:\Users\rszypulewski\Desktop\GitHub\WP-Paint.git\Paint\Paint\obj\Debug\Paint.dll
+C:\Users\rszypulewski\Desktop\GitHub\WP-Paint.git\Paint\Paint\obj\Debug\Paint.pdb
+C:\Users\rszypulewski\Desktop\GitHub\WP-Paint.git\Paint\Paint\obj\Debug\XapCacheFile.xml
